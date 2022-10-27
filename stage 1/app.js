@@ -9,6 +9,9 @@ const app = express();
 
 const port = process.env.PORT;
 
+//Return static page
+app.use(express.static(`${__dirname}/public`))
+
 //Create route request
 app.route('/oyefule-oluwatayo').get((req, res) => {
    res.status(200).json({
