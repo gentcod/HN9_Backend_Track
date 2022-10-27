@@ -1,8 +1,13 @@
 //Import express.js
 const express = require('express');
+const dotenv = require('dotenv');
+
+dotenv.config({ path: './config.env' });
 
 //Initialize express
 const app = express();
+
+const port = process.env.PORT;
 
 //Create route request
 app.route('/oyefule-oluwatayo').get((req, res) => {
@@ -14,6 +19,6 @@ app.route('/oyefule-oluwatayo').get((req, res) => {
    })
 })
 
-app.listen(8000, ()=> {
+app.listen(port, ()=> {
    console.log('App is listening for request');
 })
