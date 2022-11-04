@@ -10,6 +10,7 @@ exports.mathOperation = (req, res) => {
 
    //Check for math operation
    if (data.operation_type === "+" || data.operation_type === "add" || data.operation_type === "addition") result = x + y;
+   if (data.operation_type === "-" || data.operation_type === "subtract" || data.operation_type === "subtraction") result = x - y;
    if (data.operation_type === "*" || data.operation_type === "multiply" || data.operation_type === "multiplication") result = x * y;
    if (data.operation_type === "/" || data.operation_type === "divide" || data.operation_type === "division") result = x / y;
 
