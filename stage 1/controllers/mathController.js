@@ -15,7 +15,7 @@ exports.mathOperation = (req, res) => {
 
    res.status(200).json({
       slackUsername: "gentcod",
-      operation_type: data.operation_type,
       result: result,
+      operation_type: data.operation_type,
    })
 };
